@@ -2,10 +2,10 @@ import React from 'react'
 import InputOption from './InputOption';
 import './Post.css'
 import { Avatar } from '@material-ui/core'
-import { ThumbUpAltOutlinedIcon } from '@material-ui/icons/ThumbUpAltOutlined'
-import { ChatOutlinedIcon } from '@material-ui/icons/ChatOutlined'
-import { ShareOutlinedIcon } from '@material-ui/icons/ShareOutlined'
-import { SendOutlinedIcon } from '@material-ui/icons/SendOutlined'
+// import { ThumbUpAltOutlinedIcon } from '@material-ui/icons/ThumbUpAltOutlined'
+// import { ChatOutlinedIcon } from '@material-ui/icons/ChatOutlined'
+// import { ShareOutlinedIcon } from '@material-ui/icons/ShareOutlined'
+// import { SendOutlinedIcon } from '@material-ui/icons/SendOutlined'
 
 function Post({name, description, message, photoUrl}) {
     return (
@@ -23,7 +23,7 @@ function Post({name, description, message, photoUrl}) {
             </div>
 
             <div className="post__buttons">
-                <InputOption title="Photo" Icon={ThumbUpAltOutlinedIcon} color="#70B5F9" />
+                {/* <InputOption title="Photo" Icon={ThumbUpAltOutlinedIcon} color="#70B5F9" /> */}
                 {/* <InputOption title="Like" color="gray" Icon={ThumbUpAltOutlinedIcon}/> */}
                 {/* <InputOption Icon={ChatOutlinedIcon} title="Comment" color="gray"/>
                 <InputOption Icon={ShareOutlinedIcon} title="Share" color="gray"/>
