@@ -17,7 +17,7 @@ function Sidebar() {
                 <img src="https://media-exp1.licdn.com/dms/image/C4E16AQH6v_J7Z3xhgA/profile-displaybackgroundimage-shrink_200_800/0/1607520158163?e=1615420800&v=beta&t=KdKwW1ZD0UY4PDtla5C4HBP4NpMjWM6EIC-JuNrmFrw" alt=""/>
                 <Avatar className='sidebar__avatar'src="https://media-exp1.licdn.com/dms/image/C4E03AQF_O2eW8bGQIQ/profile-displayphoto-shrink_100_100/0/1607933987497?e=1615420800&v=beta&t=2Bc3VojBElbQKcC6eEpcVqTU_F5MG75iOVaXvOBIW0g" />
                 <h2>Piyush Pandey</h2>
-                <h4>piyush.pandey@arekss.com</h4>
+                <h4>Python developer | Django and REST Framework | AZURE | Odoo ERP |</h4>
             </div>
 
             <div className="sidebar__stats">
