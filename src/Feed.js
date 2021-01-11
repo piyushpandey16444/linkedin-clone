@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 import './Feed.css'
 import CreateIcon from '@material-ui/icons/Create';
 import ImageIcon from '@material-ui/icons/Image';
@@ -9,6 +9,13 @@ import CalendarViewDayIcon from '@material-ui/icons/CalendarViewDay';
 import Post from './Post';
 
 function Feed() {
+
+    const [posts, setPosts] = useState([])
+
+    const sendPost = e => {
+        e.preventDefault()
+    }
+
     return (
         <div className='feed'>
             <div className="feed__inputContainer">
@@ -16,7 +23,7 @@ function Feed() {
                     <CreateIcon />
                     <form action="">
                         <input type="text"/>
-                        <button type='submit'>Send</button>
+                        <button onClick={sendPost} type='submit'>Send</button>
                     </form>
                 </div>
 
@@ -29,6 +36,9 @@ function Feed() {
             </div>
 
             {/* Posts */}
+            {posts.map((post) => {
+                <Post />
+            })}
             <Post name="Piyush Pandey" description="Python developer | Django and REST Framework | AZURE | Odoo ERP |" message="Congratulate Sachit for starting a new position as Co-Founder at JAG Infra
 " photoUrl="https://media-exp1.licdn.com/dms/image/C4E03AQF_O2eW8bGQIQ/profile-displayphoto-shrink_100_100/0/1607933987497?e=1615420800&v=beta&t=2Bc3VojBElbQKcC6eEpcVqTU_F5MG75iOVaXvOBIW0g"/>
 
